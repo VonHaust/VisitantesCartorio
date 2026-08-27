@@ -42,10 +42,10 @@ namespace VisitantesCartorio
                     StringBuilder construtorTexto = new StringBuilder();
 
                     // Cabeçalho do formulário. Também menciona a data e hora em que foi GERADO.
-                    construtorTexto.AppendLine("==================================================");
-                    construtorTexto.AppendLine("       RELATÓRIO COMPLETO DE VISITANTES           ");
+                    construtorTexto.AppendLine("##################################################");
+                    construtorTexto.AppendLine("       FORMULÁRIO DE VISITANTES           ");
                     construtorTexto.AppendLine($" Gerado em: {DateTime.Now.ToString("dd/MM/yyyy HH:mm")} ");
-                    construtorTexto.AppendLine("==================================================");
+                    construtorTexto.AppendLine("##################################################");
                     construtorTexto.AppendLine();
 
                     // Para cada visitante, exibe suas informações no formulário.
