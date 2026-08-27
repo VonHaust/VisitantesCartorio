@@ -36,9 +36,7 @@ namespace VisitantesCartorio
                 {
                     // Pega os visitantes, coloca dentro da variável 'lista' e ordena os IDs em ordem decrescente
                     // (mais recente para o mais antigo).
-                    var lista = System.Linq.Enumerable.ToList(
-                        System.Linq.Enumerable.OrderByDescending(context.Visitantes, v => v.Id)
-                    );
+                    var lista = context.Visitantes.OrderByDescending(v => v.Id).ToList();
 
                     // Exibe a lista no DataGridView.
                     dataGridViewPrev.DataSource = lista;
