@@ -72,7 +72,6 @@
             MinimumSize = new Size(1600, 900);
             Name = "FormMain";
             ShowIcon = false;
-            ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             FormClosing += FormMain_FormClosing;
             ResumeLayout(false);

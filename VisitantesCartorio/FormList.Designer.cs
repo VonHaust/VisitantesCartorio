@@ -54,7 +54,6 @@
             MinimizeBox = false;
             Name = "FormList";
             ShowIcon = false;
-            ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             ResumeLayout(false);
         }

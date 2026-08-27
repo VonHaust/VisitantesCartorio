@@ -43,7 +43,8 @@ namespace VisitantesCartorio
                     // Exibe a lista no DataGridView.
                     dataGridViewPrev.DataSource = lista;
 
-                    // Formata a coluna "DataVisita" para exibir apenas a data curta (dd/MM/yyyy), sem horário.
+                    // Formata a coluna "DataVisita" para exibir apenas a data curta (dd/MM/yyyy), sem horário. 
+                    // P.S: "MM" se refere à mês, enquanto "mm" se refere a minutos.
                     dataGridViewPrev.Columns["DataVisita"].DefaultCellStyle.Format = "dd/MM/yyyy";
                 }
             }

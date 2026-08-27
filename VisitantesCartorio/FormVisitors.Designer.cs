@@ -72,11 +72,12 @@
             buttonRegInfo.UseVisualStyleBackColor = false;
             buttonRegInfo.Click += buttonRegInfo_Click;
             // 
-            // dateTimePicker1
+            // dateTimePickerDMY
             // 
-            dateTimePickerDMY.Format = DateTimePickerFormat.Short;
+            dateTimePickerDMY.CustomFormat = "dd/MM/yyyy";
+            dateTimePickerDMY.Format = DateTimePickerFormat.Custom;
             dateTimePickerDMY.Location = new Point(893, 147);
-            dateTimePickerDMY.Name = "dateTimePicker1";
+            dateTimePickerDMY.Name = "dateTimePickerDMY";
             dateTimePickerDMY.RightToLeft = RightToLeft.Yes;
             dateTimePickerDMY.RightToLeftLayout = true;
             dateTimePickerDMY.ShowUpDown = true;
@@ -115,46 +116,46 @@
             panel1.Size = new Size(1153, 53);
             panel1.TabIndex = 12;
             // 
-            // label4
+            // labelDate
             // 
             labelDate.AutoSize = true;
             labelDate.BackColor = Color.Transparent;
             labelDate.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelDate.Location = new Point(910, 10);
-            labelDate.Name = "label4";
+            labelDate.Name = "labelDate";
             labelDate.Size = new Size(203, 34);
             labelDate.TabIndex = 17;
             labelDate.Text = "Data da Visita";
             // 
-            // label3
+            // labelProcedure
             // 
             labelProcedure.AutoSize = true;
             labelProcedure.BackColor = Color.Transparent;
             labelProcedure.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelProcedure.Location = new Point(659, 10);
-            labelProcedure.Name = "label3";
+            labelProcedure.Name = "labelProcedure";
             labelProcedure.Size = new Size(116, 34);
             labelProcedure.TabIndex = 17;
             labelProcedure.Text = "Serviço";
             // 
-            // label2
+            // labelGender
             // 
             labelGender.AutoSize = true;
             labelGender.BackColor = Color.Transparent;
             labelGender.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelGender.Location = new Point(365, 10);
-            labelGender.Name = "label2";
+            labelGender.Name = "labelGender";
             labelGender.Size = new Size(119, 34);
             labelGender.TabIndex = 16;
             labelGender.Text = "Gênero";
             // 
-            // label1
+            // labelName
             // 
             labelName.AutoSize = true;
             labelName.BackColor = Color.Transparent;
             labelName.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelName.Location = new Point(90, 10);
-            labelName.Name = "label1";
+            labelName.Name = "labelName";
             labelName.Size = new Size(98, 34);
             labelName.TabIndex = 15;
             labelName.Text = "Nome";
@@ -179,13 +180,13 @@
             panel2.Size = new Size(255, 53);
             panel2.TabIndex = 13;
             // 
-            // label5
+            // labelPreview
             // 
             labelPreview.AutoSize = true;
             labelPreview.BackColor = Color.Transparent;
             labelPreview.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelPreview.Location = new Point(81, 10);
-            labelPreview.Name = "label5";
+            labelPreview.Name = "labelPreview";
             labelPreview.Size = new Size(99, 34);
             labelPreview.TabIndex = 18;
             labelPreview.Text = "Prévia";
@@ -236,7 +237,6 @@
             MinimumSize = new Size(1173, 600);
             Name = "FormVisitors";
             ShowIcon = false;
-            ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormVisitors_Load;
             panel1.ResumeLayout(false);
