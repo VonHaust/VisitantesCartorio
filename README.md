@@ -13,11 +13,11 @@ Por ser uma aplicação local e isolada, é ideal para cenários que necessitam 
 
 <img width="500" height="281" alt="Print_1" src="https://github.com/user-attachments/assets/90816d1a-31af-42b3-ad0e-96f17663bc03" />
 
-*Acima: Visão geral do Menu Principal do formulário.*
+*Acima: Interface do Menu Principal do formulário ("FormMain").*
 
 <img width="500" height="281" alt="Print_2" src="https://github.com/user-attachments/assets/80aaecda-a45c-4a96-a072-bc7da61ecadd" />
 
-*Acima: Interface de cadastro de visitantes com validação de campos em tempo real.*
+*Acima: Interface do Menu de Cadastro do formulário ("FormVisitor").*
 
 &nbsp;
 ## **⚙️ Arquitetura e Fluxo de Dados**
@@ -33,7 +33,7 @@ O ecossistema funciona através da seguinte lógica:
 * **Menu Principal ("FormMain"):** Interface central que apresenta duas opções: "Cadastrar" e "Listar". A navegação foi projetada para que as janelas secundárias não se sobreponham, exigindo que finalize a tela atual para acessar a próxima.
 * **Cadastro de Visitantes ("FormVisitor"):** Permite a inserção de nome, gênero, serviço cartorial solicitado e a data do atendimento. Conta com validação preventiva de dados (impedindo cadastros em branco), um painel Grid atualizado em tempo real com os últimos registros e botões de ação ("Cadastrar", "Deletar" e "Resetar"). 
 * **Listagem e Relatório ("FormList"):** Exibe todos os registros ativos do banco em um documento selecionável e copiável, incluindo o horário exato do cadastro.
-* **Segurança no Gerenciamento de Dados:** Para as opções de exclusão individual ou reset completo do banco de dados, conta com o uso de pop-ups de confirmação afim de evitar acidentes. Acionar essas funções também redefine automaticamente os identificadores (IDs) do SQLite.
+* **Segurança no Gerenciamento de Dados:** Para as opções de exclusão individual ou reset completo do banco de dados, conta com o uso de pop-ups de confirmação afim de evitar acidentes. Acionar essa última função também redefine automaticamente os identificadores (IDs) do SQLite.
 
 &nbsp;
 ## **🚀 Como Executar**
